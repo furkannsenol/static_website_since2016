@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+body{			
+	 margin: 0px;
+	padding:0px;
+	
+	}
+	@font-face{
+		font-family:BebasNeue;
+		src:url(media/BebasNeue.otf);
+	}
+	@font-face{
+			font-family: Oswald-Regular;
+			src: url(media/Oswald-Regular.ttf);
+	}
+	
+	#container {
+				width:300px;
+				height:410px;
+				background:#292c2f;
+				
+				font-size: 1.2em;
+				line-height: 1.55em;
+				color:white;
+				font-size:14px;
+				font-family: 'Oswald-Regular', 'Trebuchet MS', Helvetica, sans-serif;
+			}		
+			#title{
+			
+			height:40px;
+			width:200px;
+			background:#292c2f;
+			padding:10px 0 0 20px;
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			font-size:13px;
+				color:White;
+				font-size:25px;
+				font-weight:bold;
+				letter-spacing: .5px;
+				
+			}
+			#content{
+				width:280px;
+				height:250px;
+				background:white;
+				padding:10px 0 0 20px;
+				 line-height: 20px;
+				 color:#000;
+				 margin-bottom:10px;
+			}
+			#content label{
+				font-size:15px;
+				font-weight:bold;
+				font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+				
+			}
+			
+			#submit{
+				position:absolute;	
+				margin-left:-194px;
+				margin-top:5px;
+				cursor:default;
+			}
+			#text1{
+				border-radius:3px;
+				border: 1px solid #6e6e6e;
+				height:25px;
+				padding-left:24px;
+			}
+			
+			#lower{
+			margin-top:5px;
+				width:285px;
+				height:80px;
+				padding-left:15px;
+				
+			}
+			#pass{
+			
+			
+			
+			height:20px;
+			margin-left:210px;
+			margin-top:20px;
+			}
+			#pass a{
+				text-decoration: none;
+				color:orange;
+				
+			}
+			
+			#pass:hover a{
+			text-decoration: underline;
+			}
+			
+			#aa{
+				position:absolute;
+				margin-top:20px;
+				margin-left:65px;
+			}
+			
+			#buton{
+			width: 150px;
+			height: 40px;
+			background-color: #313F51;
+			color: white;
+			border: 1px solid #292c2f;
+			border-radius:4px;
+			margin-left:120px;
+			font-size:16px;
+				font-weight:bold;
+				font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+				cursor:pointer;
+			}
+			#buton:hover{
+			box-shadow: 0 8px 16px 0 black, 0 6px 20px 0 rgba(0,0,0,0.19);
+
+			}
+			

@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+body{			
+	 margin: 0px;
+	padding:0px;
+	
+	}
+	@font-face{
+			font-family: Oswald-Regular;
+			src: url(media/Oswald-Regular.ttf);
+	}
+	@font-face{
+		font-family:BebasNeue;
+		src:url(media/BebasNeue.otf);
+	}
+	
+	#container{
+		width:1000px;
+		height:312px;
+		background-image:url(images/container.png);
+		display:inline-block;
+		
+	}
+	#container video{
+	position:absolute;
+	}
+	#content{
+		width:500px;
+		height:262px;
+		background:white;
+		display:inline-block;
+		margin-left:490px;	
+overflow: scroll;		
+	}
+	#content-title{
+		    background: #313F51;
+			font-size: 25px;		
+			font-family: "BebasNeue",Arial,Helvetica,sans-serif;
+			letter-spacing: .5px;
+			font-weight: 400;
+			border-bottom: 2px solid #FDBE0F;
+			color: #fff;
+			padding: 0 4%;
+			line-height: 35px;
+			margin-left:480px;			
+		}
+		#content p {
+			
+			line-height: 1.30em;
+			color:#000;
+			font-size:14px;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			padding:10px;
+			
+		}	
+		
+		
+		

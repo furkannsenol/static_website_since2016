@@ -1,0 +1,1023 @@
+@charset "utf-8";
+/* CSS Document */
+body{			
+	 margin: 0 auto;
+	padding:0px;
+	
+	}
+	@font-face{
+		font-family:montserratlight;
+		src:url(media/montserrat-light.ttf);
+	}
+	@font-face{
+			font-family: Oswald-Regular;
+			src: url(media/Oswald-Regular.ttf);
+	}
+	@font-face{
+		font-family:BebasNeue;
+		src:url(media/BebasNeue.otf);
+	}
+	@font-face{
+		font-family:MyriadPro-Cond;
+		src:url(media/MyriadPro-Cond.otf);
+	}
+	@font-face{
+		font-family:MTCORSVA;
+		src:url(media/MTCORSVA.ttf);
+	}
+	#container{
+			width:100%;
+			height:3200px;
+			background:black;
+			background-size:100% 100%;
+			 background-repeat: no-repeat;
+			background-attachment: fixed;
+			z-index:1;
+			display:inline-block;
+		}
+		
+		#header{
+			width:100%;
+			height:113px;
+			/*background-color:red;*/
+			z-index:2;
+			/*position:fixed;*/			
+		}
+		
+		#topbar_wrap{
+				width: 100%;
+				height: 50px;
+				margin-left: auto;
+				margin-right: auto;
+				background-color:#f9c700;
+				/*position:fixed;*/
+			}
+		
+		.topbar_resim{
+				float: left;
+				margin-right: 20px;
+				margin-top: 9px;
+				margin-left:5%;
+				background-size: 100%;
+				width: 150px;
+				height: 30px;
+			}
+
+		#topbar_wrap_right{
+					margin-left: auto;
+					margin-right: auto;
+					width:550px;
+					height: 50px;
+					float: right;
+					/*background-color:orange;*/
+				}
+	
+		#arama{
+			width:200px;
+			padding:7px;
+			border: 3px solid #303030;
+			color:gray;
+			background-color:#000;
+			border-radius:3px 0px 0px 3px;
+			margin-top:9px;
+			margin-left:7%;
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			font-size:13px;
+		}
+
+		#arama::placeholder{
+					font-family:MTCORSVA;
+					font-size:14px;	   
+		}
+
+		#submit{
+			background:#303030;
+			margin-top:9px;
+			border:3px solid #303030;
+			border-radius:0px 3px 3px 0px;
+			position:absolute;		
+		}
+		
+		#register{
+			padding-left:4px;
+			width:70px;
+			height:35px;
+			background:#4e4e4e;
+			border:3px solid #4e4e4e;
+			border-radius:3px 3px 3px 3px;
+			color:#cccccc;
+			font-family: Franklin Gothic,bold;
+			margin-top:9px;
+			float:right;
+			margin-right:10px;
+			text-align:center;	
+			cursor:pointer;
+			font-size: 14px;
+			font-weight: normal;/* animasyon baslangýc*/
+			display: inline-block;
+			vertical-align: middle; 
+			transform: perspective(1px) translateZ(0);
+			box-shadow: 0 0 1px transparent;
+			transition-duration: 0.3s;
+			transition-property: transform;
+		
+		}
+		
+		#register:hover{
+			transform: scale(0.9);
+		}
+		
+
+		#login{
+			padding-left:23px;
+			width:70px;
+			height:35px;
+			background:#4e4e4e;
+			border:3px solid #4e4e4e;
+			border-radius:3px 3px 3px 3px;
+			color:#cccccc;
+			font-family: Franklin Gothic,bold;
+			margin-top:9px;
+			float:right;
+			margin-right:40px;
+			text-align:center;
+			cursor:pointer;	
+			font-size: 14px;
+			font-weight: normal;
+			vertical-align: middle;/* animasyon baslangýc*/
+			transform: perspective(1px) translateZ(0);
+			box-shadow: 0 0 1px transparent;
+			transition-duration: 0.4s;
+			transition-property: transform;
+			background-image:url(images/padlock.png);
+			transition-duration: 0.4s;
+			background-repeat:no-repeat;
+			    background-position: 5px 6px; 
+				
+			
+		}
+
+		#login:hover{
+		transform: scale(0.9);
+		}
+		#navbar{
+			width:1220px;
+			height:55px;
+			background-color:#292c2f;
+			margin:0 auto;
+			border-bottom:3px solid #535353;
+			border-radius:0px 0px 3px 3px;
+			
+			
+		}
+		#navbar-right{
+			float:right;
+			
+			height:32px;
+			width:200px;
+			margin-top:10px;
+			
+		}
+		.menu{
+			list-style-type:none;
+			margin:0px;
+			padding:0px;	
+			
+			}
+		.menu a{
+		display:inline-block;
+		text-decoration:none;
+		text-align:center;
+		color:white;
+		min-width:60px;
+		/*background-color:orange;*/
+		height:38px;
+		
+		padding:10px 5px 0 5px;
+		margin-left:10px;
+		display: inline-block;
+		 font-family: Franklin Gothic Book, helvetica, arial;
+		     font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    line-height: 25px;
+    text-transform: uppercase;
+	transition: all 0.5s linear;
+
+		}
+		.menu a#secili{
+		background-color:#535353;
+		border-radius:3px 3px 0px 0px;
+		color:#f9c700;
+		height:38px;
+		transition: all 0.5s linear;
+		
+		
+		}
+		
+		.menu li{
+			margin-top:7px;
+			float:left;
+			/* yan yana sýralam*/
+			text-align:center;	 
+		  
+		}
+		.menu a:hover{
+			color:#ccc;
+			transition:1s;	
+			transition-delay: 0.1s;
+			box-shadow: inset 3px 3px 0 1px #f9c700;
+			border-radius:3px 0px 0px 0px;
+			height:38px;	
+			padding-left:10px;
+			text-align:center;	
+			
+		}
+		#content{
+			width:1220px;
+			height:2735px;
+			margin:0 auto;
+			
+			
+			
+		}
+		#content-left{
+			width:900px;
+			height:2735px;
+			
+			float:left;
+		}
+		#content-right{
+			width:320px;
+			height:2735px;		
+			float:right;
+			
+		}
+		#slider{
+			width:95%;
+			margin:0 auto;
+			height:300px;
+			
+			margin-top:10px;
+			 border-top-width: 4px;
+    border-bottom-width: 4px;
+    border-top-style: double;
+    border-bottom-style: double;
+    border-top-color: #FDBE0F;
+    border-bottom-color: #FDBE0F;
+    border-bottom-color: #FDBE0F;
+    padding: 8px 0px;
+
+		}
+		#video{
+			width:95%;
+			margin:0 auto;
+			height:250px;
+			background-image:url(images/container.png);
+			margin-top:10px;
+			z-index:1;
+			
+		}
+		#video-title{
+		    background: #313F51;
+			font-size: 25px;
+			
+			font-family: "BebasNeue",Arial,Helvetica,sans-serif;
+			letter-spacing: .5px;
+			font-weight: 400;
+			border-bottom: 2px solid #FDBE0F;
+			color: #fff;
+			padding: 0 4%;
+			line-height: 35px;
+			
+		}
+		
+		#video-count1{
+			background:white;
+			width:200px;
+			height:200px;
+			float:left;
+			background:white;
+			border-right:#e6e6e6 groove 1px;
+			box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+			margin-left:25px;
+		}
+		#video-count2{
+			background:white;
+			width:200px;
+			height:200px;
+			float:left;
+			background:white;
+			border-right:#e6e6e6 groove 1px;
+			box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+			
+		}
+		
+		
+		#video-image{
+			width:100%;
+			height:115px;
+			/*background:orange;*/
+			background-size:100% 100%;
+		}
+		#video-image img{
+		
+			-webkit-transition: all 0.3s linear;
+			-moz-transition: all 0.3s linear;
+			transition: all 0.3s linear;
+		}
+		#video-image:hover img {
+			opacity:0.8;
+			cursor:pointer;
+		}
+		
+		#video-playbutton{
+			width:32px;
+			height:32px;
+			background-image:url(images/play-button.png);
+			border-radius: 50%;
+			margin: -110px 0 0 5px;
+			position:absolute;	
+			background: rgba(0,0,0,0.5);
+			background-image:url(images/play-button.png);
+			cursor: pointer;
+		}
+		
+		#video-time{
+			position:absolute;	
+			padding: 5px 7px;
+			border-right: 2px solid #fdbe0f;
+			margin:-24px 0 0 0;
+			background: rgba(0,0,0,0.7);
+			font: normal 12px 'BebasNeue',Arial;
+			color: #fff;
+			cursor: pointer;
+		}
+		#video-tittle{
+		    /*background:blue;*/
+			padding:10px 5px;
+			font-family: Arial,Helvetica,sans-serif;
+			text-transform: none;
+			font-size: 14px;
+			font-weight: 400;		
+		}
+		
+		#video-tittle a{
+		display:inline-block;
+		text-decoration:none;
+		color:#000;
+		}
+		
+		#urun-items{
+			width:95%;
+			margin:0 auto;
+			height:820px;
+			background:yellow;
+			margin-top:10px;
+			background-image:url(images/container.png);
+		}
+		
+		#urun{
+			float:left;
+			width:265px;
+			height:380px;
+			background:white;
+			margin:0 10px 10px 10px;
+			box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+			font-family: 'Oswald-Regular', 'Trebuchet MS', Helvetica, sans-serif;
+			
+		}
+		
+		#urun-image{
+			width:100%;
+			height:194px;
+			background:white;
+		}
+		
+		#urun-image img{
+		  display: block; 
+			-webkit-transition: all 0.3s linear;
+			-moz-transition: all 0.3s linear;
+			transition: all 0.3s linear;
+		}
+		
+		#urun-image:hover img {
+			opacity: 0.8;
+		}
+
+		#urun-image-date{
+			margin:-15px 0 0 195px;
+			border-right: 2px solid #fdbe0f;
+			position:absolute;	
+			background: rgba(0,0,0,0.7);
+			padding: 5px 7px;
+			color: #fff;
+			font-size: 1.2em;
+			font-weight: bold;
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			font-size: 62.5%;
+			line-height: 1;			
+		}
+		#urun-image-tittle{
+			width:245px;
+			height:155px;	
+			margin-top:-17px;
+			padding:10px;	
+			overflow: hidden; /* taþanlarý gizle */
+			text-overflow: ellipsis; /* eðer uzunsa üç nokta koy */
+		}
+		#urun-image-tittle h3 {	
+			font-size: 17px;
+			line-height: 1.25em;			
+		}	
+		
+		#urun-image-tittle h3 a {
+		text-decoration: none;
+		color: #333;
+		}
+		
+		#urun-image-tittle h3 a:hover {
+		text-decoration: underline;
+		}
+		
+		#urun-image-tittle p {
+			font-size: 1.2em;
+			line-height: 1.55em;
+			color:#5b5b5b;
+			font-size:14px;
+			
+		}	
+		
+		#urun-image-readmore{
+			float: right;
+			padding: 3px 5px;	
+		}
+		
+		#urun-image-readmore a{
+			text-decoration:none;
+			color: #4e90da;	
+			padding: 3px 5px;
+		}
+		
+		#urun-image-readmore:hover a{
+			background: #313F51;
+			color: #fff;
+			border-radius: 4px;
+		}
+		
+		#story-items{
+			width:95%;
+			margin:0 auto;
+			height:580px;
+			/*background:red;*/
+			margin-top:10px;
+		}
+		#story-left{
+			float:left;
+			width:410px;
+			height:580px;
+			/*background:aqua;*/
+			background-image:url(images/container.png);
+				
+		}
+		#story-right{
+			float:right;
+			width:410px;
+			height:580px;
+			background-image:url(images/container.png);
+					
+		}
+		
+		#story-count1{
+			/*background:pink;*/
+			width:95%;
+			height:105px;
+			margin:0 auto;
+			border-bottom:#e6e6e6 groove 1px;		
+		}
+		#story-count2{
+			/*background:pink;*/
+			width:95%;
+			height:105px;
+			margin:0 auto;
+			box-shadow: 0 2px 3px rgba(0,0,0,0.4);	
+		}
+		#story-image{
+			width:182px;
+			height:105px;
+			background:white;
+			background-size:100% 100%;
+			display:inline-block;
+		}
+		#story-title{
+			background:white;
+			width:187px;
+			float:right;
+			height:85px;
+			padding:10px 10px;
+			font-size: 14px;
+			font-weight: 400;	
+			overflow: hidden;
+			text-overflow: ellipsis;	
+			font-family: Arial,Helvetica,sans-serif;
+			
+
+    font-size: 14px;
+    font-weight: 400;	
+		}
+		#story-title a{
+		text-decoration:none;
+		color:#000;
+		}
+		#story-image img{
+		display: block; 
+			-webkit-transition: all 0.3s linear;
+			-moz-transition: all 0.3s linear;
+			transition: all 0.3s linear;
+		}
+			
+		#story-image:hover img {
+			opacity: 0.8;
+		}
+		
+		#formula{
+			width:95%;
+			margin:0 auto;
+			height:350px;	
+			margin-top:10px;
+			background-image:url(images/container.png);
+			
+			
+		}
+		#formula-items{
+		width:95%;
+		height:300px;
+		margin:0 auto;
+		background:white;
+	
+		
+		}
+		#formula-count1{
+			width:50%;
+			height:300px;		
+		}
+		
+		#formula-count1-image{
+			width:407px;
+			height:60%;
+			
+			background-size:100% 100%;
+			display:inline-block;
+		}
+		#formula-count1-image img{
+		display: block; 
+			-webkit-transition: all 0.3s linear;
+			-moz-transition: all 0.3s linear;
+			transition: all 0.3s linear;
+		}
+			
+		#formula-count1-image:hover img {
+			opacity: 0.8;
+		}
+		
+		#formula-title{
+			width:100%;
+			height:40%;
+			overflow: hidden; /* taþanlarý gizle */
+			text-overflow: ellipsis; /* eðer uzunsa üç nokta koy */
+			
+		}
+		#formula-title-baslik{
+		font-size: 17px;
+			line-height: 1.25em;
+			padding:10px 0 0 10px;
+			font-family: 'Oswald-Regular', 'Trebuchet MS', Helvetica, sans-serif;
+		}
+		
+		#formula-title-baslik  a {
+		text-decoration: none;
+		color: #333;
+		}
+		
+		#formula-title-baslik  a:hover {
+		text-decoration: underline;
+		}
+		
+		#formula-title p {
+			font-size: 1.2em;
+			line-height: 1.30em;
+			color:#5b5b5b;
+			font-size:14px;
+			font-family:Arial, Helvetica, sans-serif;
+			padding-left:10px;
+			width:370px;
+		}	
+		
+		#formula-count2{
+			width:405px;
+			height:300px;
+			float:left;
+
+			float:right;
+			margin-top:-300px;
+		}
+		#formula-count3{
+		width:201px;
+		height:50%;
+		float:left;
+		position:relative;
+		
+		border-right:#e6e6e6 groove 1px;
+		}
+		#formula-count3-image{
+			width:201px;
+			height:65%;
+			
+			background-size:100% 100%;
+			display:inline-block;
+		}
+		#formula-count3-title{
+			width:191px;
+			height:35%;
+			
+			font-family: Arial,Helvetica,sans-serif;
+    text-transform: none;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    height: 3.5em;
+	padding:5px 0 0 10px;
+		}
+		#formula-count3-title a{
+			text-decoration: none;
+		color: #000;
+		}
+		#formula-count3-image img{
+		
+			-webkit-transition: all 0.3s linear;
+			-moz-transition: all 0.3s linear;
+			transition: all 0.3s linear;
+		}
+			#formula-count3-image:hover img {
+			opacity: 0.8;
+			cursor:pointer;
+		}
+		#formula-count4{
+		width:201px;
+		height:50%;
+		float:left;
+		position:relative;
+		}
+		#formula-count4-playbutton{
+			width:32px;
+			height:32px;
+			background-image:url(images/play-button.png);
+			border-radius: 50%;
+			margin: -90px 0 0 5px;
+			position:absolute;	
+			background: rgba(0,0,0,0.5);
+			background-image:url(images/play-button.png);
+			cursor: pointer;
+		}
+		
+		#formula-count4-time{
+			position:absolute;	
+			padding: 5px 7px;
+			border-right: 2px solid #fdbe0f;
+			margin:-24px 0 0 0;
+			background: rgba(0,0,0,0.7);
+			font: normal 12px 'BebasNeue',Arial;
+			color: #fff;
+			cursor: pointer;
+		}
+	
+		/*CONTENT-RIGHT*/
+		.dil-secenegi{
+			width:95%;
+			height:60px;
+			background:white;
+			margin:0 auto;
+			
+			font-family: 'Open Sans', sans-serif;
+			font-size: 16px;
+			margin-top:10px;
+		}
+		
+		.dil-secenegi-baslik{
+			font-size: 1.375rem;
+    font-family: "BebasNeue",Arial,Helvetica,sans-serif;
+    background: #FDBE0F;
+    color: #000;
+    text-align:center;
+    display: block;
+    letter-spacing: 1px;
+    font-weight: 400;
+			
+			
+		}
+		
+		.dil-secenegi-ceviri{
+			width:100%;
+			height:20px;
+			/*background:orange;*/
+			margin:5px 0px 0px 5px;
+			
+		}
+		
+		.kategori{
+			width:95%;
+			height:280px;
+			/*background-color:red;*/
+			margin:0 auto;
+			margin-top:10px;
+			
+		}
+		
+		
+		.kategori-urun-icerik {
+			height: 251px;
+			width:100%;
+			margin:0 auto;
+			font-family: Arial,Helvetica,sans-serif;
+			background:#263e59;
+			
+			
+		}
+		.kategori-urun{
+			list-style-type:none;
+			margin:0px;
+			padding:0px;
+		}
+		.kategori-urun li{
+			line-height:35px;				
+			border-bottom:#ccc groove 1px;	   
+		}
+		
+		.kategori-urun a{
+		text-decoration:none;		
+		color:#fff;		
+		font-size:13pt;
+		display: flex;
+		padding-left:20px;	
+		}
+		.kategori-urun a:hover{/*link ustune gelme durumu*/
+			background-color:#fff;
+			color:#263e59;
+			font-weight:bold;
+			width:284px;
+		}
+		
+		#reklam1{
+			width:95%;
+			height:608px;
+			cursor:pointer;
+			margin:0 auto;
+			margin-top:10px;
+			
+		}
+		#reklam2{
+			width:95%;
+			height:253px;
+			margin:0 auto;
+			margin-top:10px;
+			background:blue;
+			cursor:pointer;
+		}
+		#reklam3{
+			width:95%;
+			height:840px;
+			margin:0 auto;
+			margin-top:10px;
+			cursor:pointer;
+		}
+	
+	
+		#makale{
+			width:95%;
+			height:330px;
+			background-color:#263e59;
+			margin:0 auto;
+			margin-top:10px;
+			    
+    overflow: hidden;
+    text-overflow: ellipsis;
+		}
+		.makale-urun{
+			list-style-type:none;
+			margin:0px;
+			padding:0px;
+		}
+		.makale-urun a{
+		text-decoration:none;		
+		color:#fff;		
+		font-size:12pt;
+		display: flex;
+		
+		border-bottom:#ccc groove 1px;	
+		padding:10px 0 10px 20px;
+		font-family: Arial,Helvetica,sans-serif;
+		
+		}
+		#puan-durumu{
+		width:95%;
+		height:292px;
+		background:#fff;
+		margin:0 auto;
+		margin-top:10px;
+		}
+		#tablom{
+			border-collapse:collapse;
+			font-family:verdana,helvetica,arial,sans,serif;
+			width:100%;
+			text-align:center;
+		}
+	#tablom td, #tablom th{
+	border: 0.1px solid gray;
+	font-size: 16px;
+	}
+	
+	.alt {
+	background-color:#CCC;
+	color: #000000;
+	}
+	#players{
+			width:95%;
+			height:440px;
+			background-color:#263e59;
+			margin:0 auto;
+			margin-top:10px;
+	}
+		/* FOOTER BAÞLANGIÇ */
+		#footer{
+			width:1220px;
+			height:300px;
+			background:#FDBE0F;
+			margin:0 auto;
+			margin-top:10px;
+			position:relative;
+		}
+		#footer-count1{
+			width:225px;
+			height:300px;
+			position:absolute;
+			padding-left:60px;
+			
+		}
+		#footer-count1-title{
+			
+			
+			font-family:montserratlight, Arial;
+			font-size:16px;
+			font-weight:bold;
+			
+			padding:20px 0 20px 0;
+		}
+		.hizlimenu{
+		list-style-type:none;
+			margin:0px;
+			padding:0px;	
+			
+		}
+		
+		.hizlimenu a{
+		display:inline-block;
+		text-decoration:none;
+		text-align:center;
+		color:#000;
+		font-family:montserratlight, Arial;
+		font-size:14px;
+		margin-top:5px;
+		
+		line-height:20px;
+		
+		}		
+		.hizlimenu a:hover{
+			text-decoration:underline;
+			
+		}
+		#footer-count2{
+			width:310px;
+			height:300px;
+			position:absolute;
+			margin-left:225px;
+			padding-left:60px;
+			font-family:montserratlight, Arial;
+		font-size:14px;
+		
+		}
+		#footer-count3{
+		width:270px;
+			height:300px;
+			position:absolute;
+			margin-left:560px;
+			padding-left:60px;
+			font-family:montserratlight, Arial;
+		font-size:14px;
+		
+		}
+		#footer-count3 image{
+		margin:-10px;
+		}
+		#footer-count4{
+			
+			width:280px;
+			height:300px;
+			position:absolute;
+			margin-left:880px;
+			
+			font-family:montserratlight, Arial;
+		font-size:14px;
+		line-height:30px;
+		}
+		.iletisim{
+		list-style-type:none;
+			margin:0px;
+			padding:0px;	
+			
+		}
+		
+		.iletisim a{
+		display:inline-block;
+		text-decoration:none;
+		text-align:center;
+		color:#5383d3;
+		font-family:montserratlight, Arial;
+		font-size:14px;
+		font-weight:bold;
+		}		
+		
+		#footer-bottom{
+			width:1220px;
+			height:40px;
+			background:#0d0d0d;
+			margin:0 auto;
+		}
+		#footer-copyright{
+		font-family:montserratlight, Arial;
+		color:white;
+		padding-top:10px;
+		padding-left:30px;
+		font-size:13px;
+		text-align:center;
+		}
+		.up-arrow{	
+		width:64px;
+		height:64px;
+		margin:65px 0 0 270px;
+		cursor:pointer;
+		}
+		/*Linkin içeriði*/
+		#link-baslik{
+		    font-size: 25px;
+			color: #ad090f;
+			font-weight: normal;
+			line-height: 32px;
+			padding:20px 10px 10px 20px;
+    font-family: "BebasNeue",Arial,Helvetica,sans-serif;
+	overflow: hidden;
+	
+		}
+		#link-aciklama{
+		font-family:"Open Sans", Helvetica, Arial, Verdana, sans-serif;
+		font-size:20px;
+		font-weight:600;
+		line-height:30px;
+		color:#545454;
+		padding:10px 10px 0 20px;
+		}
+		#link-resim{
+			width:95%;
+			height:370px;
+			margin:0 auto;	
+margin-top:10px;			
+		}
+		#link-resim img{
+		-webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+		}
+		#link-resim:hover img{
+			transform: scale(1.04);
+			
+			
+		}
+		#link-metin{
+			font-family:"Open Sans", Helvetica, Arial, Verdana, sans-serif;
+			font-size:17px;
+			padding:20px 10px 10px 20px;
+			font-weight:550;
+			line-height:25px;
+		}
+		
+		#link-sosyalmedya{
+			font-family:"Open Sans", Helvetica, Arial, Verdana, sans-serif;
+			font-size:17px;
+			padding:20px 10px 10px 20px;
+			font-weight:600;
+			line-height:25px;
+			float:right;
+			color:#263e59;
+		}
